@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartData AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SAKURA -->
+<canvas id="sakura"></canvas>
+
+<header class="nav">
+    <h2>SmartData AI</h2>
+    <nav>
+        <a onclick="scrollToSection('target')">Đối tượng</a>
+        <a onclick="scrollToSection('problem')">Vấn đề</a>
+        <a onclick="scrollToSection('pricing')">Dịch vụ</a>
+        <a onclick="scrollToSection('contact')">Liên hệ</a>
+    </nav>
+    <button class="btn glow" onclick="goToRegister()">Dùng thử</button>
+</header>
+
+<!-- HERO -->
+<section class="hero reveal">
+    <h1>Giải pháp quản lý dữ liệu bằng AI</h1>
+    <p>Tối ưu hiệu suất – Giảm sai sót – Tiết kiệm thời gian</p>
+    <button class="btn" onclick="scrollToSection('target')">Khám phá</button>
+</section>
+
+<!-- TARGET -->
+<section id="target" class="section reveal">
+    <h2>Khách hàng mục tiêu</h2>
+    <div class="grid">
+        <div class="card hover">
+            <h3>Sinh viên</h3>
+            <p>Quản lý tài liệu học tập, báo cáo, đồ án</p>
+        </div>
+        <div class="card hover">
+            <h3>Nhân viên văn phòng</h3>
+            <p>Xử lý dữ liệu, file, email hàng ngày</p>
+        </div>
+        <div class="card hover">
+            <h3>Doanh nghiệp</h3>
+            <p>Quản lý dữ liệu lớn và vận hành hệ thống</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="section gray reveal">
+    <h2>Vấn đề khách hàng gặp phải</h2>
+    <div class="grid">
+        <div class="card hover">
+            <h3>Dữ liệu phân tán</h3>
+            <p>File nằm rải rác nhiều nơi, khó quản lý</p>
+        </div>
+        <div class="card hover">
+            <h3>Tốn thời gian</h3>
+            <p>Tìm kiếm thủ công gây lãng phí thời gian</p>
+        </div>
+        <div class="card hover">
+            <h3>Sai sót</h3>
+            <p>Xử lý thủ công dễ dẫn đến lỗi</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section reveal">
+    <h2>Giải pháp SmartData AI</h2>
+    <p>Ứng dụng AI để phân loại, tìm kiếm và xử lý dữ liệu tự động</p>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section gray reveal">
+    <h2>Gói dịch vụ</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Free</h3>
+            <p>0đ</p>
+            <ul>
+                <li>100 file</li>
+                <li>Tìm kiếm cơ bản</li>
+                <li>Không AI nâng cao</li>
+            </ul>
+            <button class="btn" onclick="goToRegister()">Đăng ký</button>
+        </div>
+
+        <div class="card highlight">
+            <h3>Pro</h3>
+            <p>199.000đ/tháng</p>
+            <ul>
+                <li>Không giới hạn file</li>
+                <li>AI phân loại nâng cao</li>
+                <li>Tìm kiếm thông minh</li>
+                <li>Hỗ trợ 24/7</li>
+            </ul>
+            <button class="btn glow" onclick="goToRegister()">Chọn gói</button>
+        </div>
+
+        <div class="card">
+            <h3>Enterprise</h3>
+            <p>Liên hệ</p>
+            <ul>
+                <li>Hệ thống tùy chỉnh</li>
+                <li>API tích hợp</li>
+                <li>Bảo mật cao cấp</li>
+            </ul>
+            <button class="btn" onclick="goToRegister()">Liên hệ</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+    <h2>Liên hệ</h2>
+    <p>Email: support@smartdata.ai</p>
+    <p>Hotline: 0123 456 789</p>
+    <button class="btn" onclick="goToRegister()">Đăng ký ngay</button>
+</section>
+
+<footer>
+    © 2026 SmartData AI
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

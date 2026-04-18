@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #fff;
+}
+
+/* CANVAS */
+#sakura {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(135deg, #fce7f3, #ffffff);
+}
+
+/* SECTION */
+.section {
+    padding: 80px;
+    text-align: center;
+}
+
+.gray {
+    background: #fdf2f8;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card.hover:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+    background: #ec4899;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* GLOW BUTTON */
+.glow {
+    box-shadow: 0 0 15px #ec4899;
+}
