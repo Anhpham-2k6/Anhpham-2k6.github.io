@@ -1,21 +1,76 @@
-const REGISTER_LINK = "https://forms.gle/YOUR_LINK_HERE";
-
-function goToRegister() {
-    window.open(REGISTER_LINK, "_blank");
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
 }
 
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-    });
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    background: linear-gradient(135deg, #1e3a8a, #0f172a);
 }
 
-/* SCROLL REVEAL */
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".section").forEach(el => {
-        let top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-            el.classList.add("reveal", "active");
-        }
-    });
-});
+.hero .left {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #cbd5f5;
+}
+
+.hero img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button.outline {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.section {
+    padding: 60px 80px;
+}
+
+.gray {
+    background: #1e293b;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight {
+    border: 2px solid #3b82f6;
+}
