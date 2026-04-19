@@ -1,6 +1,8 @@
 body{
 margin:0;
 font-family:Arial;
+background:#0f172a;
+color:white;
 }
 
 /* HERO */
@@ -11,8 +13,7 @@ height:100vh;
 
 .hero-left{
 width:50%;
-background:#1d6fdc;
-color:white;
+background:linear-gradient(135deg,#1d4ed8,#3b82f6);
 padding:80px;
 display:flex;
 flex-direction:column;
@@ -25,16 +26,11 @@ font-size:50px;
 
 .line{
 width:60px;
-height:6px;
+height:5px;
 background:white;
 margin:20px 0;
 }
 
-.hero-buttons button{
-margin-right:10px;
-}
-
-/* IMAGE FIX */
 .hero-right{
 width:50%;
 display:flex;
@@ -46,17 +42,25 @@ background:#eef2ff;
 .hero-right img{
 max-width:90%;
 height:auto;
-object-fit:contain;
 border-radius:20px;
 }
 
 /* SECTION */
 .section{
 padding:100px;
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.section.show{
+opacity:1;
+transform:translateY(0);
 }
 
 .light{
 background:#f1f5f9;
+color:black;
 }
 
 /* GRID */
@@ -69,13 +73,14 @@ gap:20px;
 /* CARD */
 .card{
 background:white;
+color:black;
 padding:20px;
 border-radius:15px;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-10px) scale(1.03);
 }
 
 /* BUTTON */
@@ -84,8 +89,13 @@ padding:12px 20px;
 border:none;
 border-radius:10px;
 cursor:pointer;
-background:#3b82f6;
+background:#2563eb;
 color:white;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
 }
 
 .outline{
@@ -93,8 +103,6 @@ background:transparent;
 border:1px solid white;
 }
 
-/* TEXT */
-.long-text{
-max-width:800px;
-line-height:1.6;
+.highlight{
+background:gold;
 }
