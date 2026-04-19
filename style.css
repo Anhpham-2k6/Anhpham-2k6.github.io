@@ -1,29 +1,22 @@
-body{
+*{
 margin:0;
-font-family:Arial;
-background:#020617;
-color:white;
+padding:0;
+box-sizing:border-box;
 }
 
-/* CANVAS FIX */
-#galaxy{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index:-1; /* QUAN TRỌNG */
+body{
+font-family:Arial;
 }
 
 /* NAVBAR */
 .navbar{
 position:sticky;
 top:0;
-z-index:1000;
 display:flex;
 justify-content:space-between;
 padding:20px 60px;
-background:rgba(0,0,0,0.6);
+background:#000;
+color:white;
 }
 
 /* HERO */
@@ -35,6 +28,7 @@ height:100vh;
 .hero-left{
 width:50%;
 background:#1d6fdc;
+color:white;
 padding:80px;
 display:flex;
 flex-direction:column;
@@ -51,10 +45,8 @@ background:#eef2ff;
 
 /* FIX ẢNH */
 .hero-right img{
-max-width:420px;
+max-width:400px;
 height:auto;
-object-fit:contain;
-border-radius:20px;
 }
 
 /* TEXT */
@@ -65,16 +57,7 @@ background:white;
 margin:20px 0;
 }
 
-/* SECTION */
-.section{
-padding:120px;
-}
-
-.dark{
-background:#020617;
-}
-
-/* INPUT */
+/* SEARCH */
 .search-box{
 display:flex;
 margin-top:20px;
@@ -82,13 +65,18 @@ margin-top:20px;
 
 .search-box input{
 padding:10px;
-border:none;
 }
 
 .search-box button{
 padding:10px;
-background:black;
-color:white;
-border:none;
 cursor:pointer;
+}
+
+/* SECTION */
+.section{
+padding:100px;
+}
+
+.dark{
+background:#eee;
 }
