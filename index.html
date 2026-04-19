@@ -9,7 +9,182 @@
 <body>
 
 <div id="cursor"></div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>SmartData AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<canvas id="galaxy"></canvas>
+<div id="cursor"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="logo">SMARTDATA AI</div>
+<nav>
+<a href="#problem">Vấn đề</a>
+<a href="#solution">Giải pháp</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#pricing">Giá</a>
+<a href="#contact">Liên hệ</a>
+</nav>
+<button onclick="register()">Dùng thử</button>
+</header>
+
+<!-- HERO (GIỮ GIỐNG CANVA) -->
+<section class="hero">
+
+<div class="hero-left">
+<h4>SMARTDATA AI</h4>
+<h1>Landing Page<br>Concept</h1>
+<div class="line"></div>
+
+<p>
+Landing page là công cụ chuyển đổi khách hàng hiệu quả nhất trong digital marketing.
+SmartData AI giúp tối ưu toàn bộ hành trình dữ liệu từ thu thập, xử lý đến phân tích.
+</p>
+
+<div class="search-box">
+<input value="www.smartdata.ai">
+<button onclick="goToSite()">→</button>
+</div>
+
+</div>
+
+<div class="hero-right">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+</div>
+
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="section dark">
+
+<h2>Vấn đề doanh nghiệp</h2>
+
+<p class="long">
+Trong bối cảnh chuyển đổi số, dữ liệu tăng trưởng theo cấp số nhân.
+Tuy nhiên, phần lớn doanh nghiệp vẫn xử lý dữ liệu thủ công.
+
+Các vấn đề chính:
+- Mất 2–3 giờ mỗi ngày để tìm dữ liệu  
+- Sai sót do dữ liệu không đồng nhất  
+- Không kiểm soát được luồng thông tin  
+- Quyết định sai do dữ liệu thiếu chính xác  
+
+Điều này khiến doanh nghiệp giảm hiệu suất và tăng chi phí vận hành.
+</p>
+
+</section>
+
+<!-- TARGET -->
+<section class="section">
+
+<h2>Đối tượng khách hàng</h2>
+
+<div class="grid">
+<div class="card">Doanh nghiệp SME</div>
+<div class="card">Startup công nghệ</div>
+<div class="card">Nhân viên văn phòng</div>
+<div class="card">Data Analyst</div>
+</div>
+
+</section>
+
+<!-- SOLUTION -->
+<section id="solution" class="section dark">
+
+<h2>Giải pháp SmartData AI</h2>
+
+<p class="long">
+SmartData AI là nền tảng sử dụng trí tuệ nhân tạo để tự động hóa quy trình dữ liệu.
+
+Hệ thống có khả năng:
+- Phân loại dữ liệu tự động  
+- Tìm kiếm theo ngữ nghĩa  
+- Phân tích và dự đoán  
+- Đồng bộ đa nền tảng  
+
+Giải pháp giúp doanh nghiệp tiết kiệm thời gian và nâng cao hiệu quả.
+</p>
+
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="section">
+
+<h2>AI Dashboard (Demo)</h2>
+
+<div class="dashboard">
+<div class="box">Data Flow<br>Realtime</div>
+<div class="box">AI Insight<br>Analytics</div>
+<div class="box">Automation<br>Workflow</div>
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+<section class="section dark">
+
+<h2>Lợi ích</h2>
+
+<div class="grid">
+<div class="card">🚀 Tăng hiệu suất 70%</div>
+<div class="card">⚡ Giảm thời gian xử lý</div>
+<div class="card">🧠 Tối ưu quyết định</div>
+<div class="card">📊 Insight chính xác</div>
+</div>
+
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+
+<h2>Gói dịch vụ</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Basic</h3>
+<p>Miễn phí</p>
+<button onclick="register()">Dùng thử</button>
+</div>
+
+<div class="card highlight">
+<h3>Pro</h3>
+<p>199.000đ</p>
+<button onclick="register()">Đăng ký</button>
+</div>
+
+<div class="card">
+<h3>Enterprise</h3>
+<p>Custom</p>
+<button onclick="contact()">Liên hệ</button>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+
+<h2>Liên hệ</h2>
+
+<p>Email: smartdata@gmail.com</p>
+
+<button onclick="contact()">Gửi yêu cầu</button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
 <!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">SMARTDATA AI</div>
