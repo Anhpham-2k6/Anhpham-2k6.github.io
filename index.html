@@ -8,15 +8,19 @@
 
 <body>
 
+<canvas id="bg"></canvas>
+
 <header class="navbar">
     <div class="logo">SMARTDATA AI</div>
+
     <nav>
         <a href="#problem">Vấn đề</a>
         <a href="#solution">Giải pháp</a>
         <a href="#benefits">Lợi ích</a>
         <a href="#pricing">Giá</a>
     </nav>
-    <button class="btn-primary">Dùng thử</button>
+
+    <button class="btn-primary" onclick="register()">Dùng thử</button>
 </header>
 
 <!-- HERO -->
@@ -24,16 +28,18 @@
 
 <div class="hero-left">
 <h1>AI Data Platform</h1>
-<p>Giải pháp xử lý dữ liệu thông minh cho doanh nghiệp hiện đại</p>
+
+<p>Giải pháp xử lý dữ liệu thông minh giúp doanh nghiệp tối ưu hiệu suất và ra quyết định chính xác.</p>
 
 <div class="hero-btns">
-<button class="btn-primary">Bắt đầu</button>
+<button class="btn-primary" onclick="scrollToSection('problem')">Khám phá</button>
 <button class="btn-outline">Demo</button>
 </div>
 
 <div class="stats">
 <div>⚡ 70% Faster</div>
 <div>📊 99% Accuracy</div>
+<div>🚀 3x Productivity</div>
 </div>
 </div>
 
@@ -47,33 +53,16 @@
 <section id="problem" class="section split">
 
 <div class="left">
-
 <h2>Thách thức dữ liệu</h2>
 
 <div class="grid">
 
-<div class="box">
-<h3>Dữ liệu phân tán</h3>
-<p>Email, CRM, file nội bộ không đồng bộ.</p>
-</div>
-
-<div class="box">
-<h3>Xử lý thủ công</h3>
-<p>Tốn thời gian và dễ sai sót.</p>
-</div>
-
-<div class="box">
-<h3>Thiếu insight</h3>
-<p>Không khai thác được giá trị dữ liệu.</p>
-</div>
-
-<div class="box">
-<h3>Hiệu suất thấp</h3>
-<p>Quy trình làm việc bị chậm.</p>
-</div>
+<div class="box">⏳ Mất thời gian tìm kiếm dữ liệu</div>
+<div class="box">❌ Sai sót khi xử lý thủ công</div>
+<div class="box">📉 Hiệu suất làm việc thấp</div>
+<div class="box">🧠 Quyết định thiếu chính xác</div>
 
 </div>
-
 </div>
 
 <div class="right">
@@ -90,7 +79,6 @@
 <section id="solution" class="section split dark">
 
 <div class="left">
-
 <h2>SmartData AI</h2>
 
 <div class="grid">
@@ -117,10 +105,10 @@
 
 <div class="grid">
 
-<div class="card">🚀 Năng suất</div>
-<div class="card">⚡ Tốc độ</div>
-<div class="card">🧠 Quyết định</div>
-<div class="card">📊 Insight</div>
+<div class="card">🚀 Tăng năng suất</div>
+<div class="card">⚡ Xử lý nhanh</div>
+<div class="card">🧠 Quyết định tốt</div>
+<div class="card">📊 Insight chính xác</div>
 
 </div>
 
@@ -136,19 +124,19 @@
 <div class="card">
 <h3>Basic</h3>
 <p>Free</p>
-<button class="btn-secondary">Try</button>
+<button class="btn-secondary">Dùng thử</button>
 </div>
 
 <div class="card highlight">
 <h3>Pro</h3>
-<p>199k</p>
-<button class="btn-primary">Buy</button>
+<p>199.000đ</p>
+<button class="btn-primary">Đăng ký</button>
 </div>
 
 <div class="card">
 <h3>Enterprise</h3>
 <p>Custom</p>
-<button class="btn-outline">Contact</button>
+<button class="btn-outline">Liên hệ</button>
 </div>
 
 </div>
