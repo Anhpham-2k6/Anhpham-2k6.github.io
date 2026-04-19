@@ -1,56 +1,62 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0f172a;
-color:white;
-}
-
-/* NAV */
-.nav{
-padding:20px 60px;
 }
 
 /* HERO */
 .hero{
 display:flex;
-align-items:center;
-justify-content:space-between;
-padding:100px;
-background:#1e3a8a;
+height:100vh;
 }
 
 .hero-left{
 width:50%;
+background:#1d6fdc;
+color:white;
+padding:80px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero-left h1{
+font-size:50px;
+}
+
+.line{
+width:60px;
+height:6px;
+background:white;
+margin:20px 0;
+}
+
+.hero-buttons button{
+margin-right:10px;
+}
+
+/* IMAGE FIX */
+.hero-right{
+width:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#eef2ff;
 }
 
 .hero-right img{
-width:400px;
+max-width:90%;
+height:auto;
+object-fit:contain;
 border-radius:20px;
-animation:float 3s infinite;
-}
-
-/* FLOAT ANIMATION */
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-20px)}
-100%{transform:translateY(0)}
 }
 
 /* SECTION */
 .section{
-padding:100px 80px;
+padding:100px;
 }
 
 .light{
 background:#f1f5f9;
-color:black;
-}
-
-/* TEXT */
-.long-text{
-max-width:800px;
-margin:auto;
-line-height:1.6;
 }
 
 /* GRID */
@@ -63,7 +69,6 @@ gap:20px;
 /* CARD */
 .card{
 background:white;
-color:black;
 padding:20px;
 border-radius:15px;
 transition:0.3s;
@@ -81,14 +86,15 @@ border-radius:10px;
 cursor:pointer;
 background:#3b82f6;
 color:white;
-transition:0.3s;
 }
 
-button:hover{
-transform:scale(1.05);
+.outline{
+background:transparent;
+border:1px solid white;
 }
 
-/* HIGHLIGHT */
-.highlight{
-background:gold;
+/* TEXT */
+.long-text{
+max-width:800px;
+line-height:1.6;
 }
