@@ -10,12 +10,17 @@ function contact(){
 alert("Liên hệ: smartdata@gmail.com");
 }
 
-const els=document.querySelectorAll(".fade");
-
-window.addEventListener("scroll",()=>{
-els.forEach(el=>{
-if(el.getBoundingClientRect().top<window.innerHeight-100){
-el.classList.add("show");
+function toggleChat(){
+let box=document.getElementById("chatbox");
+box.style.display = box.style.display==="flex" ? "none":"flex";
 }
-});
-});
+
+function sendMsg(){
+let input=document.getElementById("chatInput");
+let body=document.getElementById("chatBody");
+
+body.innerHTML += "<p><b>Bạn:</b> "+input.value+"</p>";
+body.innerHTML += "<p><b>Bot:</b> Cảm ơn bạn!</p>";
+
+input.value="";
+}
