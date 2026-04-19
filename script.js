@@ -1,19 +1,15 @@
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-    });
+function scrollToSection() {
+    document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
 }
 
-function goToRegister() {
-    alert("Demo đăng ký (bạn có thể gắn Google Form)");
+function scrollToProblem() {
+    document.getElementById("problem").scrollIntoView({ behavior: "smooth" });
 }
 
-/* SCROLL EFFECT */
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".section").forEach(el => {
-        let top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-            el.classList.add("reveal", "active");
-        }
-    });
-});
+function register() {
+    window.open("https://forms.gle/", "_blank");
+}
+
+function contact() {
+    alert("Liên hệ: smartdata@gmail.com");
+}
