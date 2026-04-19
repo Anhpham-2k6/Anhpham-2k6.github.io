@@ -104,14 +104,38 @@ padding:12px 20px;
 border-radius:10px;
 }
 
-/* ANIMATION */
-.fade{
-opacity:0;
-transform:translateY(30px);
-transition:0.8s;
+/* FOOTER */
+.footer{
+background:#0f172a;
+color:white;
+padding:40px 80px;
 }
 
-.fade.show{
-opacity:1;
-transform:translateY(0);
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+/* CHATBOT */
+.chatbot{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#3b82f6;
+color:white;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.chatbox{
+position:fixed;
+bottom:80px;
+right:20px;
+width:250px;
+background:white;
+border-radius:10px;
+display:none;
+flex-direction:column;
 }
