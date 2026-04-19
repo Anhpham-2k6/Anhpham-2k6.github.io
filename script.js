@@ -1,16 +1,21 @@
-function scrollTo(id) {
-    const section = document.getElementById(id);
-    if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-    } else {
-        alert("Không tìm thấy section: " + id);
-    }
+const REGISTER_LINK = "https://forms.gle/YOUR_LINK_HERE";
+
+function goToRegister() {
+    window.open(REGISTER_LINK, "_blank");
 }
 
-function register() {
-    window.open("https://forms.gle/your-link", "_blank");
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
 }
 
-function contact() {
-    alert("Liên hệ: smartdata@gmail.com");
-}
+/* SCROLL REVEAL */
+window.addEventListener("scroll", () => {
+    document.querySelectorAll(".section").forEach(el => {
+        let top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("reveal", "active");
+        }
+    });
+});
