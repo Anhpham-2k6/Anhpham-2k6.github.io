@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #f0f7ff, #ffffff);
+    overflow-x: hidden;
 }
 
 /* HERO */
@@ -11,13 +13,12 @@ body {
 
 .left {
     width: 50%;
-    background: #1e6bc8;
+    background: linear-gradient(135deg, #1e6bc8, #4facfe);
     color: white;
     padding: 80px;
-}
-
-.right {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .right img {
@@ -26,8 +27,10 @@ body {
     object-fit: cover;
 }
 
+/* TEXT */
 h1 {
-    font-size: 50px;
+    font-size: 52px;
+    line-height: 1.2;
 }
 
 .line {
@@ -37,14 +40,28 @@ h1 {
     margin: 20px 0;
 }
 
-/* CTA */
-.cta button {
+/* CTA BUTTON */
+button {
     padding: 12px 20px;
-    margin-right: 10px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
 }
 
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* PRIMARY */
+button:first-child {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 114, 255, 0.5);
+}
+
+/* OUTLINE */
 .outline {
     background: transparent;
     border: 1px solid white;
@@ -53,30 +70,52 @@ h1 {
 
 /* SECTION */
 .section {
-    padding: 80px;
+    padding: 100px 60px;
     text-align: center;
 }
 
 .gray {
-    background: #f4f6f8;
+    background: #f5f8fc;
 }
 
 /* GRID */
 .grid {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /* CARD */
 .card {
-    width: 250px;
-    padding: 20px;
+    width: 260px;
+    padding: 25px;
     background: white;
-    border-radius: 10px;
+    border-radius: 12px;
+    transition: 0.4s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* HIGHLIGHT */
 .highlight {
     border: 2px solid #1e6bc8;
+    transform: scale(1.05);
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
