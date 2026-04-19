@@ -64,11 +64,6 @@ button.outline {
     background: #0f172a;
     padding: 20px;
     border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
 }
 
 .highlight {
