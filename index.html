@@ -8,21 +8,6 @@
 
 <body>
 
-<div id="cursor"></div>
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<title>SmartData AI</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<canvas id="galaxy"></canvas>
-<div id="cursor"></div>
-
-<!-- NAVBAR -->
 <header class="navbar">
 <div class="logo">SMARTDATA AI</div>
 <nav>
@@ -30,27 +15,25 @@
 <a href="#solution">Giải pháp</a>
 <a href="#dashboard">Dashboard</a>
 <a href="#pricing">Giá</a>
-<a href="#contact">Liên hệ</a>
 </nav>
 <button onclick="register()">Dùng thử</button>
 </header>
 
-<!-- HERO (GIỮ GIỐNG CANVA) -->
+<!-- HERO -->
 <section class="hero">
 
 <div class="hero-left">
-<h4>SMARTDATA AI</h4>
-<h1>Landing Page<br>Concept</h1>
-<div class="line"></div>
+<h1>Biến dữ liệu hỗn loạn<br>thành hệ thống thông minh</h1>
 
 <p>
-Landing page là công cụ chuyển đổi khách hàng hiệu quả nhất trong digital marketing.
-SmartData AI giúp tối ưu toàn bộ hành trình dữ liệu từ thu thập, xử lý đến phân tích.
+Trong môi trường doanh nghiệp hiện đại, dữ liệu không chỉ là tài nguyên mà còn là lợi thế cạnh tranh.
+Tuy nhiên, phần lớn doanh nghiệp vẫn chưa khai thác được giá trị thực sự của dữ liệu.
+SmartData AI giúp chuyển đổi dữ liệu thành insight có giá trị.
 </p>
 
-<div class="search-box">
-<input value="www.smartdata.ai">
-<button onclick="goToSite()">→</button>
+<div class="btn-group">
+<button onclick="scrollTo('solution')">Khám phá</button>
+<button class="outline" onclick="scrollTo('pricing')">Xem giá</button>
 </div>
 
 </div>
@@ -62,54 +45,38 @@ SmartData AI giúp tối ưu toàn bộ hành trình dữ liệu từ thu thập
 </section>
 
 <!-- PROBLEM -->
-<section id="problem" class="section dark">
+<section id="problem" class="section">
 
-<h2>Vấn đề doanh nghiệp</h2>
+<h2>Vấn đề cốt lõi</h2>
 
 <p class="long">
-Trong bối cảnh chuyển đổi số, dữ liệu tăng trưởng theo cấp số nhân.
-Tuy nhiên, phần lớn doanh nghiệp vẫn xử lý dữ liệu thủ công.
+Doanh nghiệp hiện nay phải xử lý dữ liệu từ nhiều nguồn khác nhau:
+CRM, email, file nội bộ, cloud storage...
 
-Các vấn đề chính:
-- Mất 2–3 giờ mỗi ngày để tìm dữ liệu  
-- Sai sót do dữ liệu không đồng nhất  
-- Không kiểm soát được luồng thông tin  
-- Quyết định sai do dữ liệu thiếu chính xác  
+Sự phân mảnh này dẫn đến:
+- Thời gian tìm kiếm dữ liệu tăng mạnh  
+- Sai sót trong phân tích  
+- Khó kiểm soát thông tin  
 
-Điều này khiến doanh nghiệp giảm hiệu suất và tăng chi phí vận hành.
+Điều này khiến doanh nghiệp mất đi khả năng ra quyết định nhanh và chính xác.
 </p>
-
-</section>
-
-<!-- TARGET -->
-<section class="section">
-
-<h2>Đối tượng khách hàng</h2>
-
-<div class="grid">
-<div class="card">Doanh nghiệp SME</div>
-<div class="card">Startup công nghệ</div>
-<div class="card">Nhân viên văn phòng</div>
-<div class="card">Data Analyst</div>
-</div>
 
 </section>
 
 <!-- SOLUTION -->
 <section id="solution" class="section dark">
 
-<h2>Giải pháp SmartData AI</h2>
+<h2>Giải pháp của chúng tôi</h2>
 
 <p class="long">
-SmartData AI là nền tảng sử dụng trí tuệ nhân tạo để tự động hóa quy trình dữ liệu.
+SmartData AI sử dụng trí tuệ nhân tạo để xử lý dữ liệu theo ngữ nghĩa thay vì cấu trúc truyền thống.
 
-Hệ thống có khả năng:
-- Phân loại dữ liệu tự động  
-- Tìm kiếm theo ngữ nghĩa  
+Hệ thống có thể:
+- Tự động phân loại dữ liệu  
+- Tìm kiếm thông minh  
 - Phân tích và dự đoán  
-- Đồng bộ đa nền tảng  
 
-Giải pháp giúp doanh nghiệp tiết kiệm thời gian và nâng cao hiệu quả.
+Điều này giúp giảm hoàn toàn thao tác thủ công và nâng cao hiệu quả.
 </p>
 
 </section>
@@ -117,176 +84,18 @@ Giải pháp giúp doanh nghiệp tiết kiệm thời gian và nâng cao hiệu
 <!-- DASHBOARD -->
 <section id="dashboard" class="section">
 
-<h2>AI Dashboard (Demo)</h2>
+<h2>AI Dashboard</h2>
 
 <div class="dashboard">
-<div class="box">Data Flow<br>Realtime</div>
-<div class="box">AI Insight<br>Analytics</div>
-<div class="box">Automation<br>Workflow</div>
-</div>
-
-</section>
-
-<!-- BENEFITS -->
-<section class="section dark">
-
-<h2>Lợi ích</h2>
-
-<div class="grid">
-<div class="card">🚀 Tăng hiệu suất 70%</div>
-<div class="card">⚡ Giảm thời gian xử lý</div>
-<div class="card">🧠 Tối ưu quyết định</div>
-<div class="card">📊 Insight chính xác</div>
+<div class="panel">Realtime Data</div>
+<div class="panel">AI Insight</div>
+<div class="panel">Automation</div>
 </div>
 
 </section>
 
 <!-- PRICING -->
-<section id="pricing" class="section">
-
-<h2>Gói dịch vụ</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Basic</h3>
-<p>Miễn phí</p>
-<button onclick="register()">Dùng thử</button>
-</div>
-
-<div class="card highlight">
-<h3>Pro</h3>
-<p>199.000đ</p>
-<button onclick="register()">Đăng ký</button>
-</div>
-
-<div class="card">
-<h3>Enterprise</h3>
-<p>Custom</p>
-<button onclick="contact()">Liên hệ</button>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section dark">
-
-<h2>Liên hệ</h2>
-
-<p>Email: smartdata@gmail.com</p>
-
-<button onclick="contact()">Gửi yêu cầu</button>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">SMARTDATA AI</div>
-    <nav>
-        <a href="#problem">Vấn đề</a>
-        <a href="#solution">Giải pháp</a>
-        <a href="#pricing">Giá</a>
-        <a href="#contact">Liên hệ</a>
-    </nav>
-    <button onclick="register()">Dùng thử</button>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-
-<div class="hero-left">
-<h1>Biến dữ liệu hỗn loạn<br>thành hệ thống thông minh</h1>
-
-<p>
-Trong thời đại số, dữ liệu tăng trưởng theo cấp số nhân,
-nhưng phần lớn doanh nghiệp vẫn xử lý dữ liệu theo cách thủ công.
-SmartData AI giúp bạn tự động hóa toàn bộ quy trình đó.
-</p>
-
-<div class="hero-btns">
-<button onclick="scrollToSection('solution')">Khám phá</button>
-<button onclick="scrollToSection('pricing')" class="outline">Xem giá</button>
-</div>
-
-</div>
-
-<div class="hero-right">
-<div class="ai-visual"></div>
-</div>
-
-</section>
-
-<!-- PROBLEM -->
-<section id="problem" class="section">
-
-<h2>Vấn đề thực tế</h2>
-
-<p class="long-text">
-Trong môi trường doanh nghiệp hiện đại, dữ liệu không còn nằm ở một hệ thống duy nhất.
-Nó tồn tại rải rác ở email, Google Drive, CRM, file Excel và các hệ thống nội bộ.
-
-Nhân viên phải mất trung bình 2–3 giờ mỗi ngày chỉ để tìm kiếm dữ liệu.
-Không chỉ vậy, dữ liệu không đồng nhất dẫn đến sai sót trong phân tích và ra quyết định.
-
-Những vấn đề này không chỉ làm giảm hiệu suất làm việc,
-mà còn ảnh hưởng trực tiếp đến chiến lược và tăng trưởng của doanh nghiệp.
-</p>
-
-</section>
-
-<!-- SOLUTION -->
-<section id="solution" class="section alt">
-
-<div class="split">
-
-<div>
-<h2>Giải pháp AI</h2>
-
-<p class="long-text">
-SmartData AI sử dụng trí tuệ nhân tạo để tự động phân loại,
-tìm kiếm và phân tích dữ liệu theo ngữ nghĩa.
-
-Bạn không cần nhớ file nằm ở đâu.
-Chỉ cần nhập nội dung → hệ thống sẽ tìm và gợi ý chính xác.
-
-Điều này giúp giảm hoàn toàn thao tác thủ công
-và nâng cao hiệu quả làm việc đáng kể.
-</p>
-
-<button onclick="register()">Trải nghiệm ngay</button>
-
-</div>
-
-<div class="image-box"></div>
-
-</div>
-
-</section>
-
-<!-- BENEFITS -->
-<section class="section">
-
-<h2>Lợi ích nổi bật</h2>
-
-<div class="grid">
-
-<div class="card">🚀 Tăng hiệu suất làm việc</div>
-<div class="card">⚡ Xử lý dữ liệu nhanh hơn</div>
-<div class="card">🧠 Giảm áp lực công việc</div>
-<div class="card">📊 Ra quyết định chính xác</div>
-
-</div>
-
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="section alt">
+<section id="pricing" class="section dark">
 
 <h2>Gói dịch vụ</h2>
 
@@ -314,18 +123,6 @@ và nâng cao hiệu quả làm việc đáng kể.
 
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-
-<h2>Liên hệ</h2>
-
-<p>Email: smartdata@gmail.com</p>
-
-<button onclick="contact()">Gửi yêu cầu</button>
-
-</section>
-
 <script src="script.js"></script>
-
 </body>
 </html>
