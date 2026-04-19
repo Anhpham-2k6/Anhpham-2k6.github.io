@@ -1,41 +1,165 @@
-<!-- COMMITMENT -->
-<section class="section fade">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>SmartData AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-<h2>Cam kết của chúng tôi</h2>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+<div class="logo">SMARTDATA AI</div>
+
+<nav>
+<a href="#problem">Vấn đề</a>
+<a href="#solution">Giải pháp</a>
+<a href="#process">Quy trình</a>
+<a href="#benefits">Lợi ích</a>
+<a href="#pricing">Gói dịch vụ</a>
+<a href="#commit">Cam kết</a>
+<a href="#contact">Liên hệ</a>
+</nav>
+
+<button class="btn-primary" onclick="register()">Dùng thử</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="hero-left">
+<h1>AI Data Platform</h1>
+
+<p>
+Giải pháp AI giúp doanh nghiệp quản lý, xử lý và khai thác dữ liệu
+một cách nhanh chóng, chính xác và hiệu quả.
+</p>
+
+<div class="hero-btns">
+<button class="btn-primary" onclick="scrollToSection('problem')">Khám phá</button>
+<button class="btn-outline" onclick="scrollToSection('pricing')">Xem giá</button>
+</div>
+</div>
+
+<div class="hero-right">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+</div>
+
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="section fade">
+<h2>Vấn đề doanh nghiệp</h2>
+
+<div class="grid-3">
+<div class="card">Dữ liệu phân tán nhiều hệ thống</div>
+<div class="card">Xử lý thủ công tốn thời gian</div>
+<div class="card">Sai sót dữ liệu thường xuyên</div>
+<div class="card">Hiệu suất làm việc thấp</div>
+<div class="card">Thiếu insight dữ liệu</div>
+<div class="card">Chi phí vận hành cao</div>
+</div>
+
+</section>
+
+<!-- SOLUTION -->
+<section id="solution" class="section light fade">
+<h2>Giải pháp SmartData AI</h2>
+
+<div class="grid-3">
+<div class="card">🤖 Tự động phân loại dữ liệu</div>
+<div class="card">🔍 Tìm kiếm thông minh</div>
+<div class="card">📊 Phân tích dữ liệu</div>
+<div class="card">🔗 Đồng bộ hệ thống</div>
+<div class="card">⚡ Xử lý thời gian thực</div>
+<div class="card">🧠 Hỗ trợ quyết định</div>
+</div>
+
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section fade">
+<h2>Quy trình hoạt động</h2>
+
+<div class="grid-4">
+<div class="card">Thu thập dữ liệu</div>
+<div class="card">Xử lý AI</div>
+<div class="card">Phân tích</div>
+<div class="card">Hiển thị</div>
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits" class="section light fade">
+<h2>Lợi ích</h2>
+
+<div class="grid-3">
+<div class="card">🚀 Tăng năng suất</div>
+<div class="card">⚡ Tiết kiệm thời gian</div>
+<div class="card">🧠 Quyết định tốt hơn</div>
+<div class="card">📊 Insight rõ ràng</div>
+<div class="card">🔒 Bảo mật cao</div>
+<div class="card">🌐 Mở rộng dễ dàng</div>
+</div>
+
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section fade">
+<h2>Gói dịch vụ</h2>
 
 <div class="grid-3">
 
 <div class="card">
-🔒 Bảo mật dữ liệu tuyệt đối<br>
-Cam kết bảo vệ dữ liệu khách hàng với công nghệ bảo mật cao.
+<h3>Basic</h3>
+<p>Miễn phí</p>
+<button class="btn-secondary" onclick="register()">Dùng thử</button>
+</div>
+
+<div class="card highlight">
+<h3>Pro</h3>
+<p>199.000đ/tháng</p>
+<button class="btn-primary" onclick="register()">Đăng ký</button>
 </div>
 
 <div class="card">
-⚡ Hiệu suất tối ưu<br>
-Đảm bảo hệ thống hoạt động nhanh và ổn định.
-</div>
-
-<div class="card">
-🧠 AI chính xác<br>
-Kết quả phân tích đáng tin cậy, hỗ trợ quyết định.
-</div>
-
-<div class="card">
-📞 Hỗ trợ 24/7<br>
-Đội ngũ hỗ trợ luôn sẵn sàng giúp đỡ.
-</div>
-
-<div class="card">
-🚀 Triển khai nhanh<br>
-Thiết lập hệ thống trong thời gian ngắn.
-</div>
-
-<div class="card">
-📈 Tối ưu chi phí<br>
-Giảm chi phí vận hành dài hạn.
+<h3>Enterprise</h3>
+<p>Liên hệ</p>
+<button class="btn-outline" onclick="contact()">Liên hệ</button>
 </div>
 
 </div>
+
+</section>
+
+<!-- COMMIT -->
+<section id="commit" class="section light fade">
+<h2>Cam kết dịch vụ</h2>
+
+<div class="grid-3">
+<div class="card">🔒 Bảo mật dữ liệu tuyệt đối</div>
+<div class="card">⚡ Hiệu suất ổn định</div>
+<div class="card">🧠 AI chính xác</div>
+<div class="card">📞 Hỗ trợ 24/7</div>
+<div class="card">🚀 Triển khai nhanh</div>
+<div class="card">📈 Tối ưu chi phí</div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade">
+<h2>Liên hệ</h2>
+
+<div class="grid-3">
+<div class="card">📧 smartdata@gmail.com</div>
+<div class="card">📞 0123456789</div>
+<div class="card">🌐 www.smartdata.ai</div>
+</div>
+
+<button class="btn-primary" onclick="contact()">Gửi yêu cầu</button>
 
 </section>
 
@@ -69,17 +193,18 @@ Giảm chi phí vận hành dài hạn.
 </footer>
 
 <!-- CHATBOT -->
-<div class="chatbot" onclick="toggleChat()">
-💬
-</div>
+<div class="chatbot" onclick="toggleChat()">💬</div>
 
 <div id="chatbox" class="chatbox">
 <div class="chat-header">SmartData AI</div>
-
 <div class="chat-body" id="chatBody">
 <p>Xin chào! Bạn cần hỗ trợ gì?</p>
 </div>
-
-<input type="text" id="chatInput" placeholder="Nhập câu hỏi...">
+<input id="chatInput" placeholder="Nhập...">
 <button onclick="sendMsg()">Gửi</button>
 </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
