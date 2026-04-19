@@ -7,5 +7,5 @@ window.open("https://forms.gle/", "_blank");
 }
 
 function contact(){
-alert("Liên hệ: smartdata@gmail.com");
+alert("Email: smartdata@gmail.com");
 }
