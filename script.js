@@ -3,11 +3,7 @@ document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
 
 function register(){
-alert("Đăng ký thành công!");
-}
-
-function contact(){
-alert("Liên hệ: smartdata@gmail.com");
+alert("Đăng ký thành công");
 }
 
 function toggleChat(){
@@ -19,8 +15,6 @@ function sendMsg(){
 let input=document.getElementById("chatInput");
 let body=document.getElementById("chatBody");
 
-body.innerHTML += "<p><b>Bạn:</b> "+input.value+"</p>";
-body.innerHTML += "<p><b>Bot:</b> Cảm ơn bạn!</p>";
-
+body.innerHTML += "<p>"+input.value+"</p>";
 input.value="";
 }
