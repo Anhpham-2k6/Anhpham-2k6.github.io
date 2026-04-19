@@ -8,120 +8,110 @@
 
 <body>
 
-<div id="bg"></div>
+<div id="cursor"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">SMARTDATA AI</div>
+    <nav>
+        <a href="#problem">Vấn đề</a>
+        <a href="#solution">Giải pháp</a>
+        <a href="#pricing">Giá</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+    <button onclick="register()">Dùng thử</button>
+</header>
 
 <!-- HERO -->
 <section class="hero">
 
 <div class="hero-left">
-
-<h4>SMARTDATA AI</h4>
-
-<h1>Landing Page<br>Concept</h1>
-
-<div class="line"></div>
+<h1>Biến dữ liệu hỗn loạn<br>thành hệ thống thông minh</h1>
 
 <p>
-SmartData AI giúp doanh nghiệp chuyển đổi cách quản lý dữ liệu,
-từ thủ công sang tự động hóa hoàn toàn bằng trí tuệ nhân tạo.
-Giải pháp giúp tiết kiệm thời gian, giảm sai sót và nâng cao hiệu suất.
+Trong thời đại số, dữ liệu tăng trưởng theo cấp số nhân,
+nhưng phần lớn doanh nghiệp vẫn xử lý dữ liệu theo cách thủ công.
+SmartData AI giúp bạn tự động hóa toàn bộ quy trình đó.
 </p>
 
-<div class="hero-buttons">
-<button onclick="scrollToSection('problem')">Khám phá</button>
-<button onclick="scrollToSection('pricing')">Xem giá</button>
-<button onclick="contact()">Liên hệ ngay</button>
+<div class="hero-btns">
+<button onclick="scrollToSection('solution')">Khám phá</button>
+<button onclick="scrollToSection('pricing')" class="outline">Xem giá</button>
 </div>
 
 </div>
 
 <div class="hero-right">
-<div class="ai-box" onclick="explodeEffect(this)">
-🤖
-</div>
+<div class="ai-visual"></div>
 </div>
 
 </section>
 
 <!-- PROBLEM -->
-<section id="problem" class="section reveal">
+<section id="problem" class="section">
 
-<h2>Vấn đề doanh nghiệp gặp phải</h2>
+<h2>Vấn đề thực tế</h2>
 
 <p class="long-text">
-Trong môi trường doanh nghiệp hiện đại, dữ liệu không còn nằm ở một nơi duy nhất.
-Nó phân tán ở nhiều hệ thống như email, file nội bộ, cloud storage và phần mềm quản lý.
+Trong môi trường doanh nghiệp hiện đại, dữ liệu không còn nằm ở một hệ thống duy nhất.
+Nó tồn tại rải rác ở email, Google Drive, CRM, file Excel và các hệ thống nội bộ.
 
-Điều này khiến nhân viên phải dành rất nhiều thời gian để tìm kiếm thông tin.
-Trung bình mỗi ngày mất từ 2–3 giờ chỉ để tìm file hoặc kiểm tra dữ liệu.
+Nhân viên phải mất trung bình 2–3 giờ mỗi ngày chỉ để tìm kiếm dữ liệu.
+Không chỉ vậy, dữ liệu không đồng nhất dẫn đến sai sót trong phân tích và ra quyết định.
 
-Ngoài ra:
-- Dữ liệu không đồng nhất dẫn đến sai sót nghiêm trọng  
-- Khó kiểm soát phiên bản file  
-- Quyết định dựa trên dữ liệu không chính xác  
-- Áp lực công việc tăng cao  
-
-Về lâu dài, điều này khiến doanh nghiệp mất hiệu suất và giảm năng lực cạnh tranh.
+Những vấn đề này không chỉ làm giảm hiệu suất làm việc,
+mà còn ảnh hưởng trực tiếp đến chiến lược và tăng trưởng của doanh nghiệp.
 </p>
 
 </section>
 
 <!-- SOLUTION -->
-<section class="section alt reveal">
+<section id="solution" class="section alt">
 
-<h2>Giải pháp SmartData AI</h2>
+<div class="split">
+
+<div>
+<h2>Giải pháp AI</h2>
 
 <p class="long-text">
-SmartData AI sử dụng trí tuệ nhân tạo để tự động hóa toàn bộ quy trình xử lý dữ liệu.
+SmartData AI sử dụng trí tuệ nhân tạo để tự động phân loại,
+tìm kiếm và phân tích dữ liệu theo ngữ nghĩa.
 
-Hệ thống có thể:
-- Tự động phân loại dữ liệu theo nội dung  
-- Tìm kiếm bằng ngôn ngữ tự nhiên  
-- Phân tích dữ liệu và đưa ra insight  
-- Đồng bộ dữ liệu từ nhiều nền tảng  
+Bạn không cần nhớ file nằm ở đâu.
+Chỉ cần nhập nội dung → hệ thống sẽ tìm và gợi ý chính xác.
 
-Người dùng không cần nhớ file ở đâu,
-AI sẽ tự động tìm và gợi ý thông tin phù hợp.
+Điều này giúp giảm hoàn toàn thao tác thủ công
+và nâng cao hiệu quả làm việc đáng kể.
 </p>
 
-</section>
+<button onclick="register()">Trải nghiệm ngay</button>
 
-<!-- BENEFITS -->
-<section class="section reveal">
+</div>
 
-<h2>Lợi ích khi sử dụng</h2>
-
-<div class="grid">
-
-<div class="card">🚀 Tăng hiệu suất làm việc lên đến 70%</div>
-<div class="card">⚡ Giảm thời gian xử lý dữ liệu</div>
-<div class="card">🧠 Giảm áp lực công việc</div>
-<div class="card">📊 Quyết định chính xác hơn</div>
+<div class="image-box"></div>
 
 </div>
 
 </section>
 
-<!-- USE CASE -->
-<section class="section alt reveal">
+<!-- BENEFITS -->
+<section class="section">
 
-<h2>Ứng dụng thực tế</h2>
+<h2>Lợi ích nổi bật</h2>
 
-<p class="long-text">
-SmartData AI có thể áp dụng trong nhiều lĩnh vực:
+<div class="grid">
 
-- Marketing: phân tích hành vi khách hàng  
-- Tài chính: quản lý báo cáo  
-- Nhân sự: lưu trữ hồ sơ  
-- IT: quản lý hệ thống  
+<div class="card">🚀 Tăng hiệu suất làm việc</div>
+<div class="card">⚡ Xử lý dữ liệu nhanh hơn</div>
+<div class="card">🧠 Giảm áp lực công việc</div>
+<div class="card">📊 Ra quyết định chính xác</div>
 
-Giải pháp phù hợp cho mọi quy mô doanh nghiệp.
-</p>
+</div>
 
 </section>
 
 <!-- PRICING -->
-<section id="pricing" class="section reveal">
+<section id="pricing" class="section alt">
 
 <h2>Gói dịch vụ</h2>
 
@@ -135,7 +125,7 @@ Giải pháp phù hợp cho mọi quy mô doanh nghiệp.
 
 <div class="card highlight">
 <h3>Pro</h3>
-<p>199.000đ/tháng</p>
+<p>199.000đ</p>
 <button onclick="register()">Đăng ký</button>
 </div>
 
@@ -150,12 +140,11 @@ Giải pháp phù hợp cho mọi quy mô doanh nghiệp.
 </section>
 
 <!-- CONTACT -->
-<section class="section alt reveal">
+<section id="contact" class="section">
 
 <h2>Liên hệ</h2>
 
 <p>Email: smartdata@gmail.com</p>
-<p>Hotline: 0123456789</p>
 
 <button onclick="contact()">Gửi yêu cầu</button>
 
