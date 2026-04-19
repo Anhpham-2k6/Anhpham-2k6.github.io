@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>SmartData AI</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>SmartData AI</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
-    <div class="logo">SMARTDATA AI</div>
-    <nav>
-        <a href="#">Trang chủ</a>
-        <a href="#">Giải pháp</a>
-        <a href="#">Giá</a>
-        <a href="#">Liên hệ</a>
-    </nav>
+    <h2>SMARTDATA AI</h2>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-
     <div class="hero-content">
-        <h4>SMARTDATA AI</h4>
-
-        <h1>
-            Biến dữ liệu hỗn loạn<br>
-            thành hệ thống thông minh
-        </h1>
+        <h1>Biến dữ liệu hỗn loạn<br>thành hệ thống thông minh</h1>
 
         <p>
-            Trong thời đại số, dữ liệu tăng nhanh nhưng thiếu tổ chức khiến bạn mất hàng giờ tìm kiếm.
-            SmartData AI giúp tự động phân loại, tìm kiếm và xử lý dữ liệu nhanh chóng, chính xác.
+            Doanh nghiệp đang mất hàng giờ xử lý dữ liệu rời rạc.
+            SmartData AI giúp tự động hóa toàn bộ quy trình.
         </p>
 
-        <div class="cta">
-            <button onclick="scrollToSection()">Dùng thử miễn phí</button>
-            <button class="outline" onclick="scrollToProblem()">Xem vấn đề</button>
+        <div class="buttons">
+            <button onclick="scrollTo('pricing')">Dùng thử miễn phí</button>
+            <button class="outline" onclick="scrollTo('problem')">Xem vấn đề</button>
         </div>
     </div>
 
-    <div class="hero-image">
+    <div class="hero-img">
         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
     </div>
-
 </section>
 
 <!-- PROBLEM -->
-<section class="section" id="problem">
-    <h2>Vấn đề bạn đang gặp</h2>
+<section id="problem" class="section">
+    <h2>Vấn đề khách hàng</h2>
 
-    <div class="cards">
-        <div class="card">⏳ Mất 2-3 giờ mỗi ngày tìm file</div>
-        <div class="card">❌ Dễ nhầm dữ liệu</div>
-        <div class="card">😫 Stress & quá tải thông tin</div>
+    <div class="grid">
+        <div class="card">⏳ Mất 2-3h/ngày tìm file</div>
+        <div class="card">❌ Nhầm dữ liệu, sai quyết định</div>
+        <div class="card">😫 Stress & quá tải</div>
+    </div>
+</section>
+
+<!-- TARGET -->
+<section class="section">
+    <h2>Đối tượng khách hàng</h2>
+
+    <div class="grid">
+        <div class="card">Startup & SME</div>
+        <div class="card">Nhân viên văn phòng</div>
+        <div class="card">Data team</div>
     </div>
 </section>
 
 <!-- SOLUTION -->
 <section class="section">
-    <h2>Giải pháp của chúng tôi</h2>
+    <h2>Giải pháp SmartData AI</h2>
 
-    <div class="cards">
-        <div class="card">🤖 AI tự động phân loại dữ liệu</div>
-        <div class="card">⚡ Tìm kiếm trong vài giây</div>
-        <div class="card">📊 Phân tích thông minh</div>
+    <div class="grid">
+        <div class="card">🤖 Tự động phân loại</div>
+        <div class="card">⚡ Tìm kiếm nhanh</div>
+        <div class="card">📊 Phân tích dữ liệu</div>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+    <h2>Lợi ích</h2>
+
+    <div class="grid">
+        <div class="card">🚀 Tăng hiệu suất 70%</div>
+        <div class="card">🧠 Giảm stress</div>
+        <div class="card">💡 Quyết định chính xác</div>
     </div>
 </section>
 
 <!-- PRICING -->
-<section class="section pricing" id="pricing">
+<section id="pricing" class="section">
     <h2>Gói dịch vụ</h2>
 
-    <div class="cards">
-
+    <div class="grid">
         <div class="card">
             <h3>Basic</h3>
             <p>Miễn phí</p>
@@ -91,7 +99,6 @@
             <p>Liên hệ</p>
             <button onclick="contact()">Liên hệ</button>
         </div>
-
     </div>
 </section>
 
@@ -99,7 +106,7 @@
 <section class="section">
     <h2>Liên hệ</h2>
     <p>Email: smartdata@gmail.com</p>
-    <p>Hotline: 0123 456 789</p>
+    <p>Hotline: 0123456789</p>
 </section>
 
 <script src="script.js"></script>
