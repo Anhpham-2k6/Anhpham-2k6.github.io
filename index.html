@@ -1,164 +1,31 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<title>SmartData AI</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<canvas id="galaxy"></canvas>
-<div id="cursor-glow"></div>
-
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">SMARTDATA AI</div>
-    <nav>
-        <a href="#problem">Vấn đề</a>
-        <a href="#solution">Giải pháp</a>
-        <a href="#dashboard">Demo</a>
-        <a href="#pricing">Giá</a>
-        <a href="#contact">Liên hệ</a>
-    </nav>
-    <button onclick="register()">Dùng thử</button>
-</header>
-
-<!-- HERO -->
 <section class="hero">
+
 <div class="hero-left">
-<h4>SMARTDATA AI</h4>
-<h1>Landing Page<br>Concept</h1>
+
+<div class="logo">SMARTDATA AI</div>
+
+<h1>
+Landing Page<br>
+Concept
+</h1>
+
 <div class="line"></div>
 
 <p>
-Landing page không chỉ là một trang web — nó là điểm chuyển đổi.
-SmartData AI giúp doanh nghiệp tối ưu toàn bộ hệ thống dữ liệu,
-từ thu thập, xử lý đến phân tích thông minh.
+Trang đích (Landing Page) là công cụ chuyển đổi khách hàng hiệu quả nhất trong marketing số.
+SmartData AI giúp doanh nghiệp tối ưu quy trình xử lý dữ liệu,
+từ thu thập, phân loại đến phân tích và ra quyết định.
 </p>
 
-<div class="hero-btns">
-<button onclick="scrollToSection('solution')">Khám phá</button>
-<button class="outline" onclick="scrollToSection('pricing')">Xem giá</button>
+<div class="search-box">
+<input value="www.smartdata.ai">
+<button onclick="goToSite()">→</button>
 </div>
+
 </div>
 
 <div class="hero-right">
 <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
 </div>
+
 </section>
-
-<!-- PROBLEM -->
-<section id="problem" class="section dark">
-<h2>Vấn đề doanh nghiệp</h2>
-
-<p class="long">
-Trong thời đại số, dữ liệu không còn là tài sản phụ trợ mà trở thành yếu tố quyết định.
-Tuy nhiên, phần lớn doanh nghiệp vẫn gặp khó khăn trong việc quản lý và khai thác dữ liệu.
-
-Dữ liệu bị phân tán giữa nhiều hệ thống như CRM, email, cloud storage…
-Việc này khiến:
-- Thời gian tìm kiếm dữ liệu tăng cao  
-- Sai sót trong phân tích  
-- Quyết định thiếu chính xác  
-
-Hệ quả là hiệu suất giảm và chi phí tăng.
-</p>
-</section>
-
-<!-- SOLUTION -->
-<section id="solution" class="section">
-<div class="split">
-<div>
-<h2>Giải pháp SmartData AI</h2>
-
-<p class="long">
-SmartData AI sử dụng AI để hiểu dữ liệu theo ngữ nghĩa,
-không chỉ dựa trên cấu trúc.
-
-Hệ thống có khả năng:
-- Phân loại dữ liệu tự động  
-- Tìm kiếm thông minh  
-- Phân tích và dự đoán  
-
-Giúp doanh nghiệp chuyển đổi từ xử lý thủ công sang tự động hóa hoàn toàn.
-</p>
-
-<button onclick="register()">Trải nghiệm ngay</button>
-</div>
-
-<div class="ai-visual"></div>
-</div>
-</section>
-
-<!-- DASHBOARD -->
-<section id="dashboard" class="section dark">
-<h2>AI Dashboard (Demo)</h2>
-
-<div class="dashboard">
-<div class="panel">
-<h3>Realtime Data</h3>
-<p>Luồng dữ liệu cập nhật theo thời gian thực</p>
-</div>
-
-<div class="panel">
-<h3>AI Insight</h3>
-<p>Phân tích dữ liệu và đưa ra insight</p>
-</div>
-
-<div class="panel">
-<h3>Automation</h3>
-<p>Tự động hóa quy trình xử lý dữ liệu</p>
-</div>
-</div>
-</section>
-
-<!-- BENEFITS -->
-<section class="section">
-<h2>Lợi ích</h2>
-
-<div class="grid">
-<div class="card">🚀 Tăng hiệu suất 70%</div>
-<div class="card">⚡ Giảm thời gian xử lý</div>
-<div class="card">🧠 Ra quyết định tốt hơn</div>
-<div class="card">📊 Insight chính xác</div>
-</div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="section dark">
-<h2>Gói dịch vụ</h2>
-
-<div class="grid">
-<div class="card">
-<h3>Basic</h3>
-<p>Miễn phí</p>
-<button onclick="register()">Dùng thử</button>
-</div>
-
-<div class="card highlight">
-<h3>Pro</h3>
-<p>199.000đ</p>
-<button onclick="register()">Đăng ký</button>
-</div>
-
-<div class="card">
-<h3>Enterprise</h3>
-<p>Custom</p>
-<button onclick="contact()">Liên hệ</button>
-</div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-<h2>Liên hệ</h2>
-
-<p>Email: smartdata@gmail.com</p>
-<button onclick="contact()">Gửi yêu cầu</button>
-</section>
-
-<script src="script.js"></script>
-
-</body>
-</html>
