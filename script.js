@@ -1,10 +1,8 @@
 function goToSite(){
 let input = document.getElementById("urlInput").value;
-
 if(!input.startsWith("http")){
-input = "https://" + input;
+input="https://"+input;
 }
-
 window.open(input);
 }
 
@@ -13,9 +11,5 @@ document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
 
 function register(){
-alert("Đăng ký thành công!");
-}
-
-function contact(){
-alert("Liên hệ: smartdata@gmail.com");
+alert("Đăng ký thành công");
 }
