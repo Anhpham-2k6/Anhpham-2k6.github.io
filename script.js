@@ -1,11 +1,20 @@
-// scroll animation
-const elements = document.querySelectorAll(".fade-in");
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
 
-window.addEventListener("scroll", () => {
-elements.forEach(el=>{
-const top = el.getBoundingClientRect().top;
+function register(){
+alert("Đăng ký thành công!");
+}
 
-if(top < window.innerHeight - 100){
+function contact(){
+alert("Liên hệ: smartdata@gmail.com");
+}
+
+const els=document.querySelectorAll(".fade");
+
+window.addEventListener("scroll",()=>{
+els.forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-100){
 el.classList.add("show");
 }
 });
