@@ -3,55 +3,62 @@ margin:0;
 font-family:Arial;
 background:#0f172a;
 color:white;
-overflow-x:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+}
+
+.navbar nav a{
+margin:0 10px;
+color:white;
+text-decoration:none;
 }
 
 /* HERO */
 .hero{
 display:flex;
 height:100vh;
+padding:100px;
 }
 
 .hero-left{
 width:50%;
-background:#1d6fdc;
-padding:80px;
-display:flex;
-flex-direction:column;
-justify-content:center;
 }
 
 .hero-right{
 width:50%;
 display:flex;
-align-items:center;
 justify-content:center;
-background:#e0ecff;
+align-items:center;
 }
 
-/* AI BOX */
-.ai-box{
-font-size:100px;
-cursor:pointer;
-transition:0.3s;
-animation:float 3s infinite;
+/* AI VISUAL */
+.ai-visual{
+width:300px;
+height:300px;
+background:radial-gradient(circle,#3b82f6,#0f172a);
+border-radius:50%;
+animation:pulse 2s infinite;
 }
 
-.ai-box:hover{
-transform:scale(1.2);
-}
-
-/* FLOAT */
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-20px)}
-100%{transform:translateY(0)}
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.1)}
+100%{transform:scale(1)}
 }
 
 /* SECTION */
 .section{
-padding:100px;
-text-align:center;
+padding:120px;
 }
 
 .alt{
@@ -75,39 +82,20 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px) scale(1.05);
+transform:translateY(-10px);
 }
 
-/* BUTTON */
-button{
-padding:12px 20px;
-border:none;
-border-radius:10px;
-background:#2563eb;
-color:white;
-cursor:pointer;
-transition:0.3s;
+/* SPLIT */
+.split{
+display:flex;
+gap:40px;
+align-items:center;
 }
 
-button:hover{
-transform:scale(1.1);
-}
-
-/* TEXT */
-.long-text{
-max-width:800px;
-margin:auto;
-line-height:1.6;
-}
-
-/* ANIMATION */
-.reveal{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
-}
-
-.reveal.show{
-opacity:1;
-transform:translateY(0);
+.image-box{
+width:300px;
+height:300px;
+background:url("https://images.unsplash.com/photo-1531297484001-80022131f5a1");
+background-size:cover;
+border-radius:20px;
 }
