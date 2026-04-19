@@ -1,8 +1,10 @@
 function goToSite(){
 let input = document.getElementById("urlInput").value;
+
 if(!input.startsWith("http")){
 input = "https://" + input;
 }
+
 window.open(input);
 }
 
