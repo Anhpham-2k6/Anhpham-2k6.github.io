@@ -1,20 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>SmartData AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- GALAXY -->
+<canvas id="galaxy"></canvas>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">SMARTDATA AI</div>
+    <nav>
+        <a href="#problem">Vấn đề</a>
+        <a href="#solution">Giải pháp</a>
+        <a href="#pricing">Giá</a>
+    </nav>
+    <button onclick="register()">Dùng thử</button>
+</header>
+
+<!-- HERO (GIỮ CHUẨN CANVA) -->
 <section class="hero">
 
 <div class="hero-left">
 
 <div class="logo">SMARTDATA AI</div>
 
-<h1>
-Landing Page<br>
-Concept
-</h1>
+<h1>Landing Page<br>Concept</h1>
 
 <div class="line"></div>
 
 <p>
-Trang đích (Landing Page) là công cụ chuyển đổi khách hàng hiệu quả nhất trong marketing số.
-SmartData AI giúp doanh nghiệp tối ưu quy trình xử lý dữ liệu,
-từ thu thập, phân loại đến phân tích và ra quyết định.
+Landing page là công cụ chuyển đổi khách hàng hiệu quả.
+SmartData AI giúp tối ưu xử lý dữ liệu từ thu thập đến phân tích.
 </p>
 
 <div class="search-box">
@@ -29,3 +50,28 @@ từ thu thập, phân loại đến phân tích và ra quyết định.
 </div>
 
 </section>
+
+<!-- CONTENT -->
+<section id="problem" class="section dark">
+<h2>Vấn đề</h2>
+<p class="long">
+Dữ liệu phân tán gây mất thời gian, sai sót và giảm hiệu suất.
+</p>
+</section>
+
+<section id="solution" class="section">
+<h2>Giải pháp</h2>
+<p class="long">
+SmartData AI tự động hóa toàn bộ quy trình dữ liệu bằng AI.
+</p>
+</section>
+
+<section id="pricing" class="section dark">
+<h2>Gói dịch vụ</h2>
+<button onclick="register()">Đăng ký</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
