@@ -14,7 +14,7 @@ function goToSite(){
 window.open("https://google.com");
 }
 
-/* SCROLL */
+/* SCROLL ANIMATION */
 window.addEventListener("scroll",()=>{
 document.querySelectorAll(".reveal").forEach(el=>{
 if(el.getBoundingClientRect().top < window.innerHeight-100){
@@ -23,10 +23,10 @@ el.classList.add("show");
 });
 });
 
-/* ICON BACKGROUND */
+/* BACKGROUND ICON */
 const icons=["🤖","📊","💻","⚡","🧠"];
 
-for(let i=0;i<20;i++){
+for(let i=0;i<25;i++){
 let el=document.createElement("span");
 el.innerText=icons[Math.floor(Math.random()*icons.length)];
 el.style.position="absolute";
