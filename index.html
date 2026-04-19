@@ -8,48 +8,37 @@
 
 <body>
 
-<!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">SMARTDATA AI</div>
-
     <nav>
         <a href="#problem">Vấn đề</a>
         <a href="#solution">Giải pháp</a>
         <a href="#benefits">Lợi ích</a>
         <a href="#pricing">Giá</a>
-        <a href="#contact">Liên hệ</a>
     </nav>
-
-    <button class="btn-primary" onclick="register()">Dùng thử</button>
+    <button class="btn-primary">Dùng thử</button>
 </header>
 
 <!-- HERO -->
 <section class="hero">
 
 <div class="hero-left">
-    <h4>SMARTDATA AI</h4>
-    <h1>Landing Page<br>Concept</h1>
+<h1>AI Data Platform</h1>
+<p>Giải pháp xử lý dữ liệu thông minh cho doanh nghiệp hiện đại</p>
 
-    <div class="line"></div>
+<div class="hero-btns">
+<button class="btn-primary">Bắt đầu</button>
+<button class="btn-outline">Demo</button>
+</div>
 
-    <p>
-        Giải pháp AI giúp doanh nghiệp xử lý dữ liệu nhanh hơn,
-        chính xác hơn và tối ưu hiệu suất vận hành.
-    </p>
-
-    <div class="search-box">
-        <input id="urlInput" value="www.smartdata.ai">
-        <button onclick="goToSite()">→</button>
-    </div>
-
-    <div class="hero-btns">
-        <button class="btn-primary" onclick="scrollToSection('problem')">Khám phá</button>
-        <button class="btn-outline" onclick="scrollToSection('pricing')">Xem giá</button>
-    </div>
+<div class="stats">
+<div>⚡ 70% Faster</div>
+<div>📊 99% Accuracy</div>
+</div>
 </div>
 
 <div class="hero-right">
-    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
 </div>
 
 </section>
@@ -58,28 +47,29 @@
 <section id="problem" class="section split">
 
 <div class="left">
-<h2>Vấn đề doanh nghiệp</h2>
 
-<div class="problem-list">
+<h2>Thách thức dữ liệu</h2>
 
-<div class="item">
-<h3>⏳ Mất thời gian</h3>
-<p>Tìm kiếm dữ liệu từ nhiều hệ thống khác nhau.</p>
+<div class="grid">
+
+<div class="box">
+<h3>Dữ liệu phân tán</h3>
+<p>Email, CRM, file nội bộ không đồng bộ.</p>
 </div>
 
-<div class="item">
-<h3>❌ Sai sót</h3>
-<p>Xử lý thủ công dễ gây lỗi dữ liệu.</p>
+<div class="box">
+<h3>Xử lý thủ công</h3>
+<p>Tốn thời gian và dễ sai sót.</p>
 </div>
 
-<div class="item">
-<h3>📉 Hiệu suất thấp</h3>
-<p>Quy trình chậm làm giảm năng suất.</p>
+<div class="box">
+<h3>Thiếu insight</h3>
+<p>Không khai thác được giá trị dữ liệu.</p>
 </div>
 
-<div class="item">
-<h3>🧠 Quyết định kém</h3>
-<p>Dữ liệu không chính xác gây sai lệch chiến lược.</p>
+<div class="box">
+<h3>Hiệu suất thấp</h3>
+<p>Quy trình làm việc bị chậm.</p>
 </div>
 
 </div>
@@ -87,38 +77,35 @@
 </div>
 
 <div class="right">
-<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+<div class="dashboard">
+<div class="card">📊 Data Flow</div>
+<div class="card">⚡ Processing</div>
+<div class="card">🧠 AI Insight</div>
+</div>
 </div>
 
 </section>
 
 <!-- SOLUTION -->
-<section id="solution" class="section dark">
+<section id="solution" class="section split dark">
 
-<h2>Giải pháp SmartData AI</h2>
+<div class="left">
+
+<h2>SmartData AI</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>🤖 Tự động hóa</h3>
-<p>AI xử lý dữ liệu tự động.</p>
+<div class="box">🤖 Automation</div>
+<div class="box">🔍 Smart Search</div>
+<div class="box">📊 Analytics</div>
+<div class="box">🔗 Integration</div>
+
 </div>
 
-<div class="card">
-<h3>🔍 Tìm kiếm thông minh</h3>
-<p>Tìm theo ngữ nghĩa.</p>
 </div>
 
-<div class="card">
-<h3>📊 Phân tích dữ liệu</h3>
-<p>Đưa ra insight.</p>
-</div>
-
-<div class="card">
-<h3>🔗 Đồng bộ</h3>
-<p>Kết nối nhiều hệ thống.</p>
-</div>
-
+<div class="right">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 </div>
 
 </section>
@@ -130,10 +117,10 @@
 
 <div class="grid">
 
-<div class="card">🚀 Tăng năng suất</div>
-<div class="card">⚡ Tiết kiệm thời gian</div>
-<div class="card">🧠 Quyết định tốt hơn</div>
-<div class="card">📊 Phân tích chính xác</div>
+<div class="card">🚀 Năng suất</div>
+<div class="card">⚡ Tốc độ</div>
+<div class="card">🧠 Quyết định</div>
+<div class="card">📊 Insight</div>
 
 </div>
 
@@ -148,33 +135,23 @@
 
 <div class="card">
 <h3>Basic</h3>
-<p>Miễn phí</p>
-<button class="btn-secondary">Dùng thử</button>
+<p>Free</p>
+<button class="btn-secondary">Try</button>
 </div>
 
 <div class="card highlight">
 <h3>Pro</h3>
-<p>199.000đ</p>
-<button class="btn-primary">Đăng ký</button>
+<p>199k</p>
+<button class="btn-primary">Buy</button>
 </div>
 
 <div class="card">
 <h3>Enterprise</h3>
-<p>Liên hệ</p>
-<button class="btn-outline">Liên hệ</button>
+<p>Custom</p>
+<button class="btn-outline">Contact</button>
 </div>
 
 </div>
-
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-
-<h2>Liên hệ</h2>
-
-<p>Email: smartdata@gmail.com</p>
-<button class="btn-primary">Gửi yêu cầu</button>
 
 </section>
 
