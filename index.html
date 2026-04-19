@@ -11,70 +11,62 @@
 <!-- NAVBAR -->
 <header class="navbar">
     <div class="logo">SMARTDATA AI</div>
+
     <nav>
         <a href="#problem">Vấn đề</a>
         <a href="#solution">Giải pháp</a>
-        <a href="#usecase">Ứng dụng</a>
         <a href="#pricing">Giá</a>
         <a href="#contact">Liên hệ</a>
     </nav>
-    <button onclick="register()">Dùng thử</button>
+
+    <button class="btn-primary" onclick="register()">Dùng thử</button>
 </header>
 
 <!-- HERO -->
 <section class="hero">
 
 <div class="hero-left">
-<h4>SMARTDATA AI</h4>
+    <h4>SMARTDATA AI</h4>
 
-<h1>Landing Page<br>Concept</h1>
+    <h1>Landing Page<br>Concept</h1>
 
-<div class="line"></div>
+    <div class="line"></div>
 
-<p>
-Landing Page không chỉ là một trang web, mà là công cụ chuyển đổi khách hàng mạnh mẽ.
-SmartData AI giúp doanh nghiệp xử lý dữ liệu nhanh hơn, chính xác hơn,
-và biến dữ liệu thành lợi thế cạnh tranh thực sự.
-</p>
+    <p>
+        Landing Page là công cụ chuyển đổi khách hàng mạnh mẽ nhất trong marketing.
+        SmartData AI giúp doanh nghiệp xử lý dữ liệu nhanh hơn, chính xác hơn
+        và đưa ra quyết định hiệu quả hơn.
+    </p>
 
-<div class="search-box">
-<input id="urlInput" value="www.smartdata.ai">
-<button onclick="goToSite()">→</button>
-</div>
+    <div class="search-box">
+        <input id="urlInput" value="www.smartdata.ai">
+        <button onclick="goToSite()">→</button>
+    </div>
 
-<div class="hero-btns">
-<button onclick="scrollToSection('problem')">Khám phá</button>
-<button onclick="scrollToSection('pricing')">Xem giá</button>
-<button onclick="contact()">Liên hệ</button>
-</div>
-
+    <div class="hero-btns">
+        <button class="btn-primary" onclick="scrollToSection('problem')">Khám phá</button>
+        <button class="btn-outline" onclick="scrollToSection('pricing')">Xem giá</button>
+        <button class="btn-secondary" onclick="contact()">Liên hệ</button>
+    </div>
 </div>
 
 <div class="hero-right">
-<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
 </div>
 
 </section>
 
 <!-- PROBLEM -->
 <section id="problem" class="section">
-<h2>Vấn đề doanh nghiệp gặp phải</h2>
+<h2>Vấn đề doanh nghiệp</h2>
 
 <p class="long">
-Trong thời đại số, dữ liệu tăng trưởng theo cấp số nhân nhưng lại bị phân tán ở nhiều hệ thống khác nhau.
-Doanh nghiệp phải xử lý dữ liệu từ email, CRM, file nội bộ, cloud storage…
-
-Điều này dẫn đến:
-- Mất 2–3 giờ mỗi ngày để tìm dữ liệu  
-- Sai sót do dữ liệu không đồng nhất  
-- Quyết định thiếu chính xác  
-- Áp lực công việc tăng cao  
-
-Hệ quả là giảm hiệu suất và tăng chi phí vận hành.
+Trong môi trường số, dữ liệu tăng nhanh nhưng thiếu tổ chức.
+Doanh nghiệp mất nhiều thời gian tìm kiếm, dễ sai sót và khó kiểm soát thông tin.
+Điều này làm giảm hiệu suất và tăng chi phí vận hành.
 </p>
 
-<button onclick="scrollToSection('solution')">Xem giải pháp</button>
-
+<button class="btn-primary" onclick="scrollToSection('solution')">Xem giải pháp</button>
 </section>
 
 <!-- SOLUTION -->
@@ -82,55 +74,29 @@ Hệ quả là giảm hiệu suất và tăng chi phí vận hành.
 <h2>Giải pháp SmartData AI</h2>
 
 <p class="long">
-SmartData AI sử dụng trí tuệ nhân tạo để tự động hóa toàn bộ quy trình xử lý dữ liệu.
-
-Hệ thống có thể:
-- Phân loại dữ liệu tự động  
-- Tìm kiếm theo ngữ nghĩa  
-- Phân tích dữ liệu và đưa ra insight  
-- Đồng bộ dữ liệu từ nhiều nền tảng  
-
-Giải pháp giúp giảm hoàn toàn thao tác thủ công và nâng cao hiệu quả làm việc.
+SmartData AI sử dụng trí tuệ nhân tạo để tự động phân loại, tìm kiếm
+và phân tích dữ liệu theo ngữ nghĩa.
+Giúp doanh nghiệp tiết kiệm thời gian và nâng cao hiệu quả làm việc.
 </p>
 
-<button onclick="scrollToSection('usecase')">Xem ứng dụng</button>
-
-</section>
-
-<!-- USE CASE -->
-<section id="usecase" class="section">
-<h2>Ứng dụng thực tế</h2>
-
-<p class="long">
-SmartData AI có thể áp dụng trong nhiều lĩnh vực:
-
-- Marketing: phân tích hành vi khách hàng  
-- Tài chính: xử lý báo cáo  
-- Nhân sự: quản lý hồ sơ  
-- IT: quản lý dữ liệu hệ thống  
-
-Phù hợp cho startup, doanh nghiệp SME và tổ chức lớn.
-</p>
-
-<button onclick="scrollToSection('pricing')">Xem giá</button>
-
+<button class="btn-secondary" onclick="scrollToSection('pricing')">Xem gói dịch vụ</button>
 </section>
 
 <!-- BENEFITS -->
-<section class="section dark">
+<section class="section">
 <h2>Lợi ích</h2>
 
 <div class="grid">
-<div class="card">🚀 Tăng hiệu suất 70%</div>
-<div class="card">⚡ Giảm thời gian xử lý</div>
-<div class="card">🧠 Quyết định chính xác</div>
-<div class="card">📊 Insight tốt hơn</div>
+<div class="card">🚀 Tăng hiệu suất</div>
+<div class="card">⚡ Xử lý nhanh</div>
+<div class="card">🧠 Quyết định tốt</div>
+<div class="card">📊 Insight chính xác</div>
 </div>
 
 </section>
 
 <!-- PRICING -->
-<section id="pricing" class="section">
+<section id="pricing" class="section dark">
 <h2>Gói dịch vụ</h2>
 
 <div class="grid">
@@ -138,19 +104,19 @@ Phù hợp cho startup, doanh nghiệp SME và tổ chức lớn.
 <div class="card">
 <h3>Basic</h3>
 <p>Miễn phí</p>
-<button onclick="register()">Dùng thử</button>
+<button class="btn-secondary" onclick="register()">Dùng thử</button>
 </div>
 
 <div class="card highlight">
 <h3>Pro</h3>
 <p>199.000đ/tháng</p>
-<button onclick="register()">Đăng ký</button>
+<button class="btn-primary" onclick="register()">Đăng ký</button>
 </div>
 
 <div class="card">
 <h3>Enterprise</h3>
 <p>Liên hệ</p>
-<button onclick="contact()">Liên hệ</button>
+<button class="btn-outline" onclick="contact()">Liên hệ</button>
 </div>
 
 </div>
@@ -158,13 +124,13 @@ Phù hợp cho startup, doanh nghiệp SME và tổ chức lớn.
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section dark">
+<section id="contact" class="section">
 <h2>Liên hệ</h2>
 
 <p>Email: smartdata@gmail.com</p>
 <p>Hotline: 0123456789</p>
 
-<button onclick="contact()">Gửi yêu cầu</button>
+<button class="btn-primary" onclick="contact()">Gửi yêu cầu</button>
 
 </section>
 
