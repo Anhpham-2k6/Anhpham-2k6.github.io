@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+
+<h3>Hình chữ nhật</h3>
+Dài: <input id="dai"><br>
+Rộng: <input id="rong"><br>
+<button onclick="hcn()">Tính</button>
+<p id="kq1"></p>
+
+<hr>
+
+<h3>Hình tròn</h3>
+Bán kính: <input id="r"><br>
+<button onclick="tron()">Tính</button>
+<p id="kq2"></p>
+
+<script>
+function hcn(){
+    var a = document.getElementById("dai").value;
+    var b = document.getElementById("rong").value;
+
+    if(a=="" || b=="" || isNaN(a) || isNaN(b)){
+        alert("Nhập số!");
+        return;
+    }
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    var P = 2*(a+b);
+    var S = a*b;
+
+    document.getElementById("kq1").innerHTML =
+        "Chu vi: " + P + "<br>Diện tích: " + S;
+}
+
+function tron(){
+    var r = document.getElementById("r").value;
+
+    if(r=="" || isNaN(r)){
+        alert("Nhập bán kính!");
+        return;
+    }
+
+    r = parseFloat(r);
+
+    var C = 2*Math.PI*r;
+    var S = Math.PI*r*r;
+
+    document.getElementById("kq2").innerHTML =
+        "Chu vi: " + C.toFixed(2) + "<br>Diện tích: " + S.toFixed(2);
+}
+</script>
+
+</body>
+</html>
