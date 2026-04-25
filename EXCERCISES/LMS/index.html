@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+
+<script>
+let a = prompt("Nhập số A:");
+let b = prompt("Nhập số B:");
+
+if (a === null || a === "" || isNaN(a)) {
+    alert("Số A không hợp lệ");
+} 
+else if (b === null || b === "" || isNaN(b)) {
+    alert("Số B không hợp lệ");
+} 
+else {
+    let result = parseFloat(a) + parseFloat(b);
+    alert(`Kết quả: ${a} + ${b} = ${result}`);
+}
+</script>
+
+</body>
+</html>
