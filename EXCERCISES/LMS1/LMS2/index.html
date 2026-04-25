@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Days in Month</title>
+</head>
+<body>
+
+<h2>Days in Month</h2>
+
+<form name="f">
+    Year: <input type="text" name="year"><br><br>
+
+    Month:
+    <select name="month">
+        <option value="">--Chọn tháng--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+
+    <br><br>
+
+    Days: <input type="text" name="date" readonly><br><br>
+
+    <button type="button" onclick="calculate()">Check</button>
+</form>
+
+<script>
+function isLeapYear(y){
+    return ( (y % 4 == 0 && y % 100 != 0) || (y % 400 == 0) );
+}
+
+function calculate(){
+    let year = document.f.year.value;
+    let month = document.f.month.value;
+
+    if(year === "" || isNaN(year)){
+        alert("Năm phải là số!");
+        return;
+    }
+
+    let days;
+
+    switch(month){
+        case "1": case "3": case "5": case "7":
+        case "8": case "10": case "12":
+            days = 31;
+            break;
+
+        case "4": case "6": case "9": case "11":
+            days = 30;
+            break;
+
+        case "2":
+            days = isLeapYear(year) ? 29 : 28;
+            break;
+
+        default:
+            alert("Chọn tháng đi!");
+            return;
+    }
+
+    document.f.date.value = days;
+}
+</script>
+
+</body>
+</html>
